@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'popping''sans-serif';
+    box-sizing: border-box;
+ }
+
+ body{
+    background-color: #080808;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+ }
+ #header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-position: center;
+ }
+
+ .container{
+    padding: 10px,10%;
+
+   
+ }
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ span{
+    color: #ff004f;
+    
+ }
+ h1{
+    font-size: 40px;
+ }
+ li{
+   list-style: none;
+   margin: 50px;
+ }
+
+ #icon{
+    display: flex;
+  
+    align-items: center;
+    justify-content: space-between;
+ }
+
+#icon li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+
+#icon li a:hover{
+   text-decoration: underline 3px solid #ff004f;
+}
+
+
+p{
+  font-size: 25px;
+}
+h2{
+    font-size: 45px;
+}
+.n{
+    margin-top: 80px;
+    margin-left: 80px;
+}
+#w{
+    margin-top: 18px;
+}
+
+  
+.col-1{
+    flex-basis: 35%;
+}
+.col-2{
+    flex-basis: 60%;
+    margin-top: 50px;
+}
+.data{
+    font-size: 18px;
+    text-align: center;
+   
+    
+    
+   
+}
+.ipl{
+    font-size: 18px;
+    margin-top: 40px;
+    text-align: center;
+}
+#web{
+    font-size: 39px;
+}
+.devoloper{
+    font-size: 30px;
+    margin-top: 25px;
+    text-align: center;
+}
+.next{
+    font-size: 32px;
+    margin-top: 15px;
+    text-align: center;
+}
+#portfolio{
+    padding: 50px 0;
+
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+ .work img{
+    width: 100%;
+    border: 1px solid #ff004f;
+    border-radius: 18px;
+    display: block;
+    transition: transform 0.5s;
+ }
+
+
+ .layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+     border-radius: 10px;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 0 40px;
+     text-align: center;
+     transition: height 0.5s;
+     color: white;
+}
+.layer h3{
+    font-weight: 50px;
+    margin-bottom: 20px;
+    
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover.layer{
+    height: 100%;
+  
+}
+
+.f{
+    color: white;
+    font-size: 20px;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: "background" 0.2s;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+form input,form textarea{
+    width: 500px;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    display: block;
+    margin-left: 480px;
+    margin-top: 40px;
+}
+
+ .btn-2{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #080808;
+    transition: "background" 0.2s;
+}
+
+.btn-2:hover{
+    background: #ff004f;
+}
+
+.copyright{
+    width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.copy{
+    font-size: 18px;
+}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>
+                    <span>S</span>avan
+                </h1>
+                <ul id="icon">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#title">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+           <div class="n"> <p>Hi I'm</p><h2><span>Savan</span>  Mahajan</h2>  <p id="w">Web Disigner</p></div>
+        </div>
+    </div>
+       <div id="about">
+        <div class="container">
+    <h1 class="sub-title">About Me</h1>
+    <p class="devoloper">Hey I am Savan Mahajan </p>
+    <p class="next"> A Web devloper</p>
+      <p class="ipl">Hey I am Savan Mahajan ,<br> a web devloper <br> 
+        I love watching cricket.<br> In ipl my favorite ipl team is <br> 
+        Royal challengers bangluru  </p>
+    </div>
+    </div>
+      
+    
+      <div class="data">
+      <ul>
+       <li> Age : 18 year</li>
+<li>Birth-date  : 18 apr 2006</li>
+      <li> Home : Pachamba</li>
+     <li> Phone : 9329011321</li>
+     <li>   Email : savanmahajan180@gmail.com</li>
+      </ul>
+    </div>
+    
+
+    <div class="portfolio">
+          <div class="container"><h1 class="sub-title">My Work</h1></div>
+      <div class="work-list"> 
+
+      <a class="work" href="facebook.html"><img src="fb.jpg"><div class="layers"><h3 class="f">Facebook login page</h3></div></a>
+      <a class="work" href="whatsaap.html"><img src="wh.jpg"><div class="layers"><h3 class="f">Whatsaap download</h3></div></a>
+      <a class="work" href="instagram.html"><img src="form.png"><div class="layers"><h3 class="f">Registration Form</h3></div></a>
+      <a class="work" href="linkedin.html"><img src="li.jpg"><div class="layers"><h3 class="f">linked in page</h3></div></a>
+
+        
+    </div>
+        
+    </div>
+    <a href="#" class="btn">See more</a>
+    <div id="contact">
+        <div class="container">
+           <h1 class="sub-title">Contact me</h1>
+            </h1>
+     <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea type="text" name="massage" rows="6" placeholder="Your Massage"></textarea>
+
+        <button type="submit" class="btn-2">Submit</button>
+     </form>
+        </div>
+    </div>
+    <div class="copyright">
+        <p class="copy">copyright @savan made with unity</p>
+    </div>
+</body>
+</html>
