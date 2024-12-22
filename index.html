@@ -48,21 +48,29 @@ nav{
  li{
    list-style: none;
    margin: 50px;
- }
-
- #icon{
-    display: flex;
-  
-    align-items: center;
-    justify-content: space-between;
- }
+  display: inline-block;
+ }
 
 #icon li a{
     color: white;
     text-decoration: none;
     font-size: 18px;
     transition: 0.5s;
+    position: relative;
 }
+
+ #icon li a::after{
+  
+    content:'' ;
+   width: 100% ;
+   background: #ff004f ;
+   height: 3px ;
+  position: absolute;
+  left:0;
+   bottom: -6px ;
+
+
+  }
 
 
 #icon li a:hover{
@@ -252,7 +260,7 @@ form input,form textarea{
                 </h1>
                 <ul id="icon">
                     <li><a href="#header">Home</a></li>
-                    <li><a href="#title">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Project</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
