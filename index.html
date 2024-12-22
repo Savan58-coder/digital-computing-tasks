@@ -47,7 +47,7 @@ nav{
  }
  li{
    list-style: none;
-   margin: 10px 20px;
+   margin: 10px 33px;
   display: inline-block;
  }
 
@@ -62,7 +62,7 @@ nav{
  #icon li a::after{
   
     content:'' ;
-   width: 100% ;
+   width: 0 ;
    background: #ff004f ;
    height: 3px ;
   position: absolute;
@@ -73,8 +73,8 @@ nav{
   }
 
 
-#icon li a:hover{
-   text-decoration: underline 3px solid #ff004f;
+#icon li a:hover::after{
+     width:100% ;
 }
 
 
